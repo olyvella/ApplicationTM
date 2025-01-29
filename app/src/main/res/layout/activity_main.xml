@@ -42,5 +42,53 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@mipmap/trustmag" />
 
+    <ImageButton
+        android:id="@+id/buttonAccueil"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/ic_home"
+        android:background="?android:attr/selectableItemBackground"
+        android:contentDescription="@string/acceuil_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/buttonVideo"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/ic_video"
+        android:background="?android:attr/selectableItemBackground"
+        android:contentDescription="@string/video_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonAccueil" />
+
+    <ImageButton
+        android:id="@+id/buttonPodcast"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/ic_podcast"
+        android:background="?android:attr/selectableItemBackground"
+        android:contentDescription="@string/podcast_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonVideo"/>
+
+    <ImageButton
+        android:id="@+id/buttonGalerie"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/ic_galerie"
+        android:background="?android:attr/selectableItemBackground"
+        android:contentDescription="@string/galerie_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonPodcast" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

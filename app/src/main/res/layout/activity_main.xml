@@ -49,7 +49,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginBottom="20dp"
         android:src="@drawable/ic_home"
-        android:background="?android:attr/selectableItemBackground"
+        android:background="@color/white"
         android:contentDescription="@string/acceuil_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -61,7 +61,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginBottom="20dp"
         android:src="@drawable/ic_video"
-        android:background="?android:attr/selectableItemBackground"
+        android:background="@color/white"
         android:contentDescription="@string/video_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/buttonAccueil" />
@@ -73,7 +73,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginBottom="20dp"
         android:src="@drawable/ic_podcast"
-        android:background="?android:attr/selectableItemBackground"
+        android:background="@color/white"
         android:contentDescription="@string/podcast_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/buttonVideo"/>
@@ -85,7 +85,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginBottom="20dp"
         android:src="@drawable/ic_galerie"
-        android:background="?android:attr/selectableItemBackground"
+        android:background="@color/white"
         android:contentDescription="@string/galerie_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/buttonPodcast" />

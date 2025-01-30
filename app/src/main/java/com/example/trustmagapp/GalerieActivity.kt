@@ -1,6 +1,5 @@
 package com.example.trustmagapp
 
-import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageView
@@ -10,12 +9,11 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-@SuppressLint("WrongViewCast")
-class MainActivity : AppCompatActivity() {
+class GalerieActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_galerie)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
@@ -37,14 +35,14 @@ class MainActivity : AppCompatActivity() {
                         startActivity(intentToMainActivity)
                     }
                     R.id.buttonVideo -> {
-                        val intentToVideoActivity: Intent = Intent(this, VideoActivity::class.java)
+                        val intentToVideoActivity = Intent(this, VideoActivity::class.java)
                         startActivity(intentToVideoActivity)
                     }
                     R.id.buttonPodcast -> {
                         Toast.makeText(this, "Vous avez appuyé sur le bouton Podcast !", Toast.LENGTH_SHORT).show()
                     }
                     R.id.buttonGalerie -> {
-                        val intentToGalerieActivity: Intent = Intent(this, GalerieActivity::class.java)
+                        val intentToGalerieActivity = Intent(this, GalerieActivity::class.java)
                         startActivity(intentToGalerieActivity)
                     }
                 }

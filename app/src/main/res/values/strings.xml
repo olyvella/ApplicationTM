@@ -1,9 +1,9 @@
 <resources>
-    <string name="app_name">TRUSTMAGApp</string>
+    <string name="app_name">TRUSTMAG</string>
     <string name="title">TRUSTMAG</string>
-    <string name="acceuil_button">Accueil</string>
-    <string name="video_button">Vidéos</string>
-    <string name="podcast_button">Podcasts</string>
-    <string name="galerie_button">Galerie</string>
+    <string name="acceuil">Accueil</string>
+    <string name="video">Vidéos</string>
+    <string name="podcast">Podcasts</string>
+    <string name="galerie">Galerie</string>
     <string name="menu_button">Menu</string>
 </resources>

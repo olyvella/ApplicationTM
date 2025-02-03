@@ -24,26 +24,35 @@ class GalerieActivity : AppCompatActivity() {
         val videoBouton = findViewById<ImageView>(R.id.buttonVideo)
         val podcastBouton = findViewById<ImageView>(R.id.buttonPodcast)
         val galerieBouton = findViewById<ImageView>(R.id.buttonGalerie)
+        val menuBouton = findViewById<ImageView>(R.id.buttonMenu)
 
-        val allButtons = listOf(accueilBouton, videoBouton, podcastBouton, galerieBouton)
+        val allButtons = listOf(accueilBouton, videoBouton, podcastBouton, galerieBouton, menuBouton)
 
         for (button in allButtons) {
             button.setOnClickListener {
                 when (button.id) {
                     R.id.buttonAccueil -> {
-                        val intentToMainActivity = Intent(this, MainActivity::class.java)
-                        startActivity(intentToMainActivity)
+                        Intent(this, MainActivity::class.java).also {
+                            startActivity(it)
+                        }
                     }
                     R.id.buttonVideo -> {
-                        val intentToVideoActivity = Intent(this, VideoActivity::class.java)
-                        startActivity(intentToVideoActivity)
+                        Intent(this, VideoActivity::class.java).also {
+                            startActivity(it)
+                        }
                     }
                     R.id.buttonPodcast -> {
                         Toast.makeText(this, "Vous avez appuyé sur le bouton Podcast !", Toast.LENGTH_SHORT).show()
                     }
                     R.id.buttonGalerie -> {
-                        val intentToGalerieActivity = Intent(this, GalerieActivity::class.java)
-                        startActivity(intentToGalerieActivity)
+                        Intent(this, GalerieActivity::class.java).also {
+                            startActivity(it)
+                        }
+                    }
+                    R.id.buttonMenu -> {
+                        Intent(this, MenuActivity::class.java).also {
+                            startActivity(it)
+                        }
                     }
                 }
             }

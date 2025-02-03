@@ -46,49 +46,70 @@
         android:id="@+id/buttonAccueil"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
         android:layout_marginBottom="20dp"
-        android:src="@drawable/ic_home"
         android:background="@color/white"
         android:contentDescription="@string/acceuil"
+        android:src="@drawable/ic_home"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonVideo"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageButton
         android:id="@+id/buttonVideo"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
         android:layout_marginBottom="20dp"
-        android:src="@drawable/ic_video"
         android:background="@color/white"
         android:contentDescription="@string/video"
+        android:src="@drawable/ic_video"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonPodcast"
         app:layout_constraintStart_toEndOf="@+id/buttonAccueil" />
 
     <ImageButton
         android:id="@+id/buttonPodcast"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
         android:layout_marginBottom="20dp"
-        android:src="@drawable/ic_podcast"
         android:background="@color/white"
         android:contentDescription="@string/podcast"
+        android:src="@drawable/ic_podcast"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/buttonVideo"/>
+        app:layout_constraintEnd_toStartOf="@+id/buttonGalerie"
+        app:layout_constraintStart_toEndOf="@+id/buttonVideo" />
 
     <ImageButton
         android:id="@+id/buttonGalerie"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
         android:layout_marginBottom="20dp"
-        android:src="@drawable/ic_galerie"
         android:background="@color/white"
         android:contentDescription="@string/galerie"
+        android:src="@drawable/ic_galerie"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonMenu"
         app:layout_constraintStart_toEndOf="@+id/buttonPodcast" />
 
+    <ImageButton
+        android:id="@+id/buttonMenu"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/white"
+        android:contentDescription="@string/menu"
+        android:src="@drawable/ic_menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonGalerie" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

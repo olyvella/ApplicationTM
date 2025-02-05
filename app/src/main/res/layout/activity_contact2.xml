@@ -9,17 +9,18 @@
     android:padding="16dp"
     tools:context=".ContactActivity">
 
-    //top de l'application avec logo et titre TRUSTMAG//
+    <!-- top de l'application avec logo et titre TRUSTMAG -->
+
 
     <ImageView
         android:id="@+id/logo"
         android:layout_width="208dp"
         android:layout_height="127dp"
         android:layout_marginStart="18dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="4dp"
         android:scrollbarSize="4dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.445"
+        app:layout_constraintHorizontal_bias="0.437"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@mipmap/trustmag" />
@@ -78,7 +79,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/mail" />
 
-    <TextView
+    <EditText
         android:id="@+id/message"
         android:layout_width="0dp"
         android:layout_height="170dp"

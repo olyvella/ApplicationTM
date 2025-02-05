@@ -29,6 +29,7 @@
         android:text="@string/title"
         android:textSize="20sp"
         android:textStyle="bold"
+        android:textColor="@color/red"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -39,6 +40,7 @@
         android:layout_height="100dp"
         android:layout_marginEnd="40dp"
         app:layout_constraintEnd_toStartOf="@+id/title"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@mipmap/trustmag" />
 

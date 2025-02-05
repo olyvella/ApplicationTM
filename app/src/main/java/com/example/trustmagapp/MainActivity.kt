@@ -51,11 +51,6 @@ class MainActivity : AppCompatActivity() {
                             startActivity(it)
                         }
                     }
-                    R.id.buttonGalerie -> {
-                        Intent(this, GalerieActivity::class.java).also {
-                            startActivity(it)
-                        }
-                    }
                     R.id.buttonMenu -> {
                         Intent(this, MenuActivity::class.java).also {
                             startActivity(it)

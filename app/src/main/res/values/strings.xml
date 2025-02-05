@@ -8,5 +8,7 @@
     <string name="menu">Menu</string>
     <string name="contact">Contact</string>
     <string name="fleche">Flèche</string>
+    <string name="message">Votre Message</string>
+    <string name="question">Une infos ? Nous rejoindre ? Ecrivez nous !</string>
     <string name="slogan">Vivez l\'actualité autrement !</string>
 </resources>

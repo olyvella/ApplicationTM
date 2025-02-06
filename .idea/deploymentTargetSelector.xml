@@ -4,18 +4,14 @@
     <selectionStates>
       <SelectionState runConfigName="app">
         <option name="selectionMode" value="DROPDOWN" />
-<<<<<<< HEAD
-        <DropdownSelection timestamp="2025-02-03T10:56:06.737895300Z">
-=======
         <DropdownSelection timestamp="2025-02-05T10:20:58.684480600Z">
->>>>>>> origin/OlyveBRANCH
           <Target type="DEFAULT_BOOT">
             <handle>
               <DeviceId pluginId="LocalEmulator" identifier="path=C:\Users\33666\.android\avd\Pixel_9_Pro_XL_API_35.avd" />
             </handle>
           </Target>
         </DropdownSelection>
-        <DialogSelection />
+        <DialogSelection/>
       </SelectionState>
       <SelectionState runConfigName="TEST">
         <option name="selectionMode" value="DROPDOWN" />

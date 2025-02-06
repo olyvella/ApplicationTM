@@ -26,8 +26,9 @@ class MenuActivity : AppCompatActivity() {
         val retourPodcast = findViewById<Button>(R.id.button3)
         val retourGalerie = findViewById<Button>(R.id.button4)
         val contactBouton = findViewById<Button>(R.id.buttonContact)
+        val fleche = findViewById<ImageButton>(R.id.icArrow)
 
-        val allButtons = listOf(retourAccueil, retourVideo, retourPodcast, retourGalerie, contactBouton)
+        val allButtons = listOf(retourAccueil, retourVideo, retourPodcast, retourGalerie, contactBouton, fleche)
 
         for (button in allButtons) {
             button.setOnClickListener {
@@ -55,14 +56,11 @@ class MenuActivity : AppCompatActivity() {
                             startActivity(it)
                         }
                     }
+                    R.id.icArrow-> {
+                        finish()
+                    }
                 }
             }
-        }
-
-        val fleche = findViewById<ImageButton>(R.id.icArrow)
-
-        fleche.setOnClickListener{
-            Toast.makeText(this, "Flèche de retour !", Toast.LENGTH_SHORT).show()
         }
 
     }

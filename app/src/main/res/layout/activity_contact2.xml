@@ -14,7 +14,7 @@
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_marginStart="4dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="28dp"
         android:layout_marginEnd="11dp"
         android:background="@color/red"
         android:contentDescription="@string/fleche"
@@ -31,7 +31,7 @@
         android:layout_marginStart="18dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="18dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="3dp"
         android:scrollbarSize="4dp"
         app:layout_constraintBottom_toTopOf="@+id/title"
         app:layout_constraintEnd_toEndOf="parent"
@@ -44,17 +44,36 @@
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="106dp"
-        android:layout_marginBottom="64dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="18dp"
         android:text="@string/title"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="50sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/mail"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="61dp"
+        android:layout_marginBottom="33dp"
+        android:text="@string/question"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/mail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:layout_constraintVertical_bias="0.0" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
@@ -126,37 +145,15 @@
         android:layout_marginEnd="20dp"
         android:layout_marginTop="36dp"
         android:layout_marginBottom="42dp"
-        android:background="@color/red"
+        android:background="@color/white"
         android:backgroundTint="@color/white"
         android:hapticFeedbackEnabled="false"
         android:text="@string/buttonMail"
-        android:textColor="@color/red"
-        android:textColorLink="@color/white"
+        android:textColor="@android:color/holo_red_dark"
         app:backgroundTint="@color/white"
-        app:iconTint="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/message" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="71dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="61dp"
-        android:layout_marginBottom="33dp"
-        android:text="@string/question"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/mail"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.515"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/title"
-        app:layout_constraintVertical_bias="0.0" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

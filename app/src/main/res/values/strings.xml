@@ -8,7 +8,11 @@
     <string name="menu">Menu</string>
     <string name="contact">Contact</string>
     <string name="fleche">Flèche</string>
+    <string name="buttonMail">ENVOYER</string>
     <string name="message">Votre Message</string>
+    <string name="enter_email">Entrez votre mail</string>
+    <string name="objet">Objet</string>
+    <string name="Message">Votre Message</string>
     <string name="question">Une infos ? Nous rejoindre ? Ecrivez nous !</string>
     <string name="slogan">Vivez l\'actualité autrement !</string>
 </resources>

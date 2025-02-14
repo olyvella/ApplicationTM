@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageButton
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -21,8 +22,8 @@ class ContactActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             return@setOnApplyWindowInsetsListener insets
         }
-            //envoie du mail
 
+        //
             val mailEdtext = findViewById<EditText>(R.id.mail)
             val objtEdtext = findViewById<EditText>(R.id.objet)
             val messageEdtext = findViewById<EditText>(R.id.message)
@@ -35,12 +36,14 @@ class ContactActivity : AppCompatActivity() {
                 val objet = objtEdtext.text.toString().trim()
                 val msg = messageEdtext.text.toString().trim()
 
+            // Verifié si l'utilisateur a bien saisie tout les champs
+
                 if (mail.isNotEmpty() && objet.isNotEmpty() && msg.isNotEmpty()) {
                     val mIntent = Intent(Intent.ACTION_SEND).apply {
-                        type = "message/rfc822" // Limite aux apps de messagerie
-                        putExtra(Intent.EXTRA_EMAIL, arrayOf("olyvesumbi04@gmail.com")) // Adresse email
-                        putExtra(Intent.EXTRA_SUBJECT, objet) // Objet du mail
-                        putExtra(Intent.EXTRA_TEXT, msg) // Contenu du message
+                        type = "message/rfc822" // Limite aux applications d'email
+                        putExtra(Intent.EXTRA_EMAIL, arrayOf("contact@trustmag.fr"))
+                        putExtra(Intent.EXTRA_SUBJECT, objet)
+                        putExtra(Intent.EXTRA_TEXT, msg)
                     }
 
                     try {
@@ -51,6 +54,12 @@ class ContactActivity : AppCompatActivity() {
                 } else {
                     Toast.makeText(this, "Veuillez remplir tous les champs", Toast.LENGTH_SHORT).show()
                 }
+            }
+
+            val fleche = findViewById<ImageButton>(R.id.icArrow2)
+
+            fleche.setOnClickListener{
+                Toast.makeText(this, "Flèche de retour !", Toast.LENGTH_SHORT).show()
             }
         }
     }

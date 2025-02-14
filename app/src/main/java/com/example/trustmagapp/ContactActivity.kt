@@ -41,7 +41,7 @@ class ContactActivity : AppCompatActivity() {
                 if (mail.isNotEmpty() && objet.isNotEmpty() && msg.isNotEmpty()) {
                     val mIntent = Intent(Intent.ACTION_SEND).apply {
                         type = "message/rfc822" // Limite aux applications d'email
-                        putExtra(Intent.EXTRA_EMAIL, arrayOf("rejoindre@trustmag.fr"))
+                        putExtra(Intent.EXTRA_EMAIL, arrayOf("contact@trustmag.fr"))
                         putExtra(Intent.EXTRA_SUBJECT, objet)
                         putExtra(Intent.EXTRA_TEXT, msg)
                     }

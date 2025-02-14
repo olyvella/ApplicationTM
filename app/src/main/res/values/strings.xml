@@ -15,4 +15,10 @@
     <string name="Message">Votre Message</string>
     <string name="question">Une infos ? Nous rejoindre ? Ecrivez nous !</string>
     <string name="slogan">Vivez l\'actualité autrement !</string>
+
+    //page PODCAST//
+    <string name="PODCAST">NOS PODCASTS</string>
+    <string name="txtpodcast">Retrouvez nos derniers podcast !</string>
+    <string name="descpdcst">Le policier Abdoulaye Kanté est revenu sans détour sur ce qui fait ce qu\'il est. Son parcours, son passé dans l'armée, sa médiatisation  [ … ]</string>
+
 </resources>
